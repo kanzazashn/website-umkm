@@ -1,46 +1,87 @@
 <!doctype html>
 <html lang="id">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kopi Nusantara - Website UMKM</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
-    <main class="page">
-      <header class="hero">
+    <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">Kopi Nusantara</a>
+        <nav aria-label="Navigasi utama">
+          <a aria-current="page" href="index.html">Beranda</a>
+          <a href="tentang.html">Tentang Kami</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="konten">
+      <section class="hero" aria-labelledby="hero-title">
         <p class="eyebrow">UMKM Pekalongan</p>
-        <h1>Kopi Nusantara</h1>
+        <h1 id="hero-title">Kopi Nusantara</h1>
         <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
         <button id="promoButton" type="button">Lihat promo hari ini</button>
-      </header>
+      </section>
 
-      <section aria-labelledby="produk-title">
-        <h2 id="produk-title">Produk Unggulan</h2>
-        <ul class="products">
-          <li>
-            <article>
-              <strong>Kopi Tubruk Signature - Rp25.000</strong>
-              <p>Kopi tubruk dengan rasa kuat dan aroma khas untuk menemani aktivitas harian.</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <strong>Cold Brew Aren - Rp30.000</strong>
-              <p>Cold brew segar dengan manis gula aren yang cocok diminum saat cuaca panas.</p>
-            </article>
-          </li>
+      <section class="profil" aria-labelledby="profil-title">
+        <h2 id="profil-title">Profil Singkat</h2>
+        <img
+          class="profile-image"
+          src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=640&q=80"
+          alt="Secangkir kopi hitam di atas meja kayu"
+        >
+        <p>Kopi Nusantara mengutamakan bahan lokal dan pelayanan ramah untuk pelanggan harian.</p>
+        <ul>
+          <li>Biji kopi dipilih dari petani sekitar.</li>
+          <li>Produk dibuat dalam batch kecil.</li>
+          <li>Pemesanan tersedia melalui WhatsApp.</li>
         </ul>
       </section>
 
-      <section class="info" aria-labelledby="info-title">
-        <h2 id="info-title">Jam Buka & Lokasi</h2>
+      <section aria-labelledby="produk-title">
+        <h2 id="produk-title">Produk Unggulan</h2>
+
+        <div class="product-list">
+          <article class="product-card">
+            <h3>Kopi Tubruk Signature</h3>
+            <p>Kopi tubruk dengan rasa kuat dan aroma khas untuk menemani aktivitas harian.</p>
+            <p class="price">Rp25.000</p>
+          </article>
+
+          <article class="product-card">
+            <h3>Cold Brew Aren</h3>
+            <p>Cold brew segar dengan manis gula aren yang cocok diminum saat cuaca panas.</p>
+            <p class="price">Rp30.000</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="etalase-title">
+        <h2 id="etalase-title">Etalase Kopi</h2>
+        <img
+          class="etalase-image"
+          src="assets/images/etalase-kopi.svg"
+          alt="Etalase Kopi Nusantara berisi kemasan kopi lokal"
+        >
+      </section>
+
+      <section id="lokasi" class="info" aria-labelledby="info-title">
+        <h2 id="info-title">Jam Buka &amp; Lokasi</h2>
         <article class="info-card">
           <p><strong>Jam buka:</strong> Senin–Sabtu, 09.00–23.00 WIB</p>
-          <p><strong>Lokasi:</strong> Jl. Diponegoro No. 10, Pekalongan.</p>
+          <p><strong>Lokasi:</strong> Jl. Diponegoro No. 10, Pekalongan (data dummy)</p>
         </article>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>Hubungi Kopi Nusantara melalui WhatsApp: 0812-0000-0000</p>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
