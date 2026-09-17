@@ -116,52 +116,77 @@ button {
 }
 
 .product-list {
-  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 360px));
+  gap: 24px;
+  align-items: start;
 }
 
 .product-card {
-  padding: 18px;
-  margin: 16px 0;
-  background: white;
-  border: 1px solid #ead8c3;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
   border-radius: 16px;
+  background: white;
+  border: 1px solid #e5d7ca;
 }
 
-.product-card h3 {
-  margin-top: 0;
-}
-
-.price {
-  font-weight: 800;
-}
-
-.etalase-image {
+.product-image {
   display: block;
   width: 100%;
-  max-width: 640px;
-  margin-top: 16px;
-  border-radius: 18px;
+  height: auto;
+  object-fit: contain;
 }
 
-.info {
-  margin-top: 30px;
+.product-content {
+  padding: 16px;
 }
 
-.info-card {
-  padding: 18px;
-  background: white;
-  border: 1px solid #ead8c3;
-  border-radius: 16px;
+.product-content h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
-.info-card p {
-  margin: 8px 0;
+.product-content p {
+  margin-bottom: 10px;
+}
+
+.product-content .price {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.product-content {
+  padding: 16px;
+}
+
+.product-content h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.product-content p {
+  margin-bottom: 10px;
+}
+
+.product-content .price {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.product-content button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 18px;
+  background: #5b321f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .site-footer {
   padding: 24px;
-  background: #2f2118;
+  background: #1f1510;
   color: white;
   text-align: center;
 }
-
