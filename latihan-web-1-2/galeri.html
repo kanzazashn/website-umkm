@@ -1,76 +1,562 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Galeri Kopi Nusantara - Website UMKM</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body>
-    <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+  <title>Galeri Kopi Nusantara - Website UMKM</title>
 
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="index.html">Kopi Nusantara</a>
+  <link rel="stylesheet" href="css/style.css">
 
-        <nav class="nav" aria-label="Navigasi utama">
-          <a href="index.html">Beranda</a>
-          <a href="tentang.html">Tentang Kami</a>
-          <a href="produk.html">Produk</a>
-          <a aria-current="page" href="galeri.html">Galeri</a>
-        </nav>
-      </div>
-    </header>
+  <style>
+    
+    .gallery-hero {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      align-items: center;
+      gap: 30px;
+      padding: 30px;
+    }
 
-    <main id="konten" class="page">
-      <h1>Galeri Kopi Nusantara</h1>
+    .gallery-hero-text {
+      min-width: 0;
+    }
 
-      <section aria-labelledby="media-title">
-        <h2 id="media-title">Media Usaha</h2>
+    .gallery-hero-image {
+      width: 100%;
+      height: 190px;
+      overflow: hidden;
+      border-radius: 16px;
+    }
 
-        <div class="gallery-list">
-          <figure class="media-card">
-            <img
-              src="assets/images/etalase-kopi.svg"
-              alt="Etalase Kopi Nusantara berisi kemasan kopi lokal"
-            >
-            <figcaption>
-              Etalase produk membantu pelanggan mengenali pilihan kopi.
-            </figcaption>
-          </figure>
+    .gallery-hero-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
 
-          <figure class="media-card">
-            <img
-              src="assets/images/proses-seduh.svg"
-              alt="Barista menuang air panas ke dripper kopi"
-            >
-            <figcaption>
-              Proses seduh manual menjadi bagian dari cerita produk.
-            </figcaption>
-          </figure>
-        </div>
-      </section>
+    .gallery-section {
+      margin-top: 35px;
+    }
 
-      <section aria-labelledby="audio-title">
-        <h2 id="audio-title">Nada Penanda Kedai</h2>
+    .gallery-section h2 {
+      margin-bottom: 8px;
+      color: #4f2f1d;
+    }
 
-        <p id="audio-note">
-          Nada uji singkat memastikan elemen audio dan kontrol browser dapat diperiksa.
+    .gallery-intro {
+      margin: 0 0 20px;
+      color: #6b5b52;
+      line-height: 1.6;
+    }
+
+    .gallery-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .media-card {
+      margin: 0;
+      overflow: hidden;
+
+      background: #ffffff;
+
+      border: 1px solid #d8c5b3;
+      border-radius: 12px;
+
+      box-shadow: 0 3px 10px rgba(80, 50, 30, 0.07);
+    }
+
+    .media-image {
+  width: 100%;
+  background: #f3e8dc;
+}
+
+.media-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+    .media-card figcaption {
+      padding: 10px 12px 12px;
+    }
+
+    .media-card figcaption h3 {
+      margin: 0 0 5px;
+
+      color: #4f2f1d;
+      font-size: 0.95rem;
+    }
+
+    .media-card figcaption p {
+      margin: 0;
+
+      color: #6b5b52;
+
+      font-size: 0.82rem;
+      line-height: 1.4;
+    }
+
+    .gallery-audio {
+      margin-top: 32px;
+      margin-bottom: 20px;
+    }
+
+    .gallery-audio h2 {
+      margin-bottom: 8px;
+      color: #4f2f1d;
+    }
+
+    .gallery-audio p {
+      margin: 0 0 12px;
+      color: #6b5b52;
+      font-size: 0.9rem;
+    }
+
+    .gallery-audio audio {
+      width: 100%;
+    }
+
+    @media (max-width: 700px) {
+
+      .gallery-hero {
+        grid-template-columns: 1fr;
+        padding: 22px;
+      }
+
+      .gallery-hero-image {
+        height: 180px;
+      }
+
+      .gallery-list {
+        grid-template-columns: 1fr;
+      }
+
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <a class="skip-link" href="#konten">
+    Lewati ke konten utama
+  </a>
+
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        Kopi Nusantara
+      </a>
+
+      <nav class="nav" aria-label="Navigasi utama">
+
+  <a href="index.html">
+    Beranda
+  </a>
+
+  <a href="tentang.html">
+    Tentang Kami
+  </a>
+
+  <a href="produk.html">
+    Produk
+  </a>
+
+  <a aria-current="page" href="galeri.html">
+    Galeri
+  </a>
+
+  <a href="index.html#kontak">
+    Kontak Singkat
+  </a>
+
+</nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- KONTEN -->
+
+  <main id="konten" class="page">
+
+
+    <!-- HERO -->
+
+    <section class="hero gallery-hero">
+
+      <div class="gallery-hero-text">
+
+        <p class="eyebrow">
+          MOMEN KOPI NUSANTARA
         </p>
 
-        <audio
-          controls
-          aria-describedby="audio-note"
-          src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="
-        >
-          Browser Anda tidak mendukung pemutar audio.
-        </audio>
-      </section>
-    </main>
+        <h1>
+          Galeri Kopi Nusantara
+        </h1>
 
-    <footer class="site-footer">
-      <p>&copy; 2026 Kopi Nusantara.</p>
-    </footer>
-  </body>
+        <p>
+          Jelajahi cerita di balik setiap sajian Kopi Nusantara, dari suasana kedai hingga proses kopi disiapkan dengan penuh ketelitian.
+        </p>
+
+      </div>
+
+
+      <div class="gallery-hero-image">
+
+        <img
+          src="assets/images/suasana-kedai.png"
+          alt="Suasana kedai Kopi Nusantara"
+        >
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================================
+         BAGIAN 1
+         ================================ -->
+
+    <section
+      class="gallery-section"
+      aria-labelledby="potret-title"
+    >
+
+      <h2 id="potret-title">
+        Potret Kopi Nusantara
+      </h2>
+
+      <p class="gallery-intro">
+        Beberapa foto suasana dan kegiatan
+        di Kopi Nusantara.
+      </p>
+
+
+      <div class="gallery-list">
+
+
+        <!-- FOTO 1 -->
+
+        <figure class="media-card">
+
+          <div class="media-image">
+
+            <img
+              src="assets/images/suasana-kedai.png"
+              alt="Suasana kedai Kopi Nusantara"
+              loading="lazy"
+            >
+
+          </div>
+
+          <figcaption>
+
+            <h3>
+              Suasana Kedai
+            </h3>
+
+            <p>
+              Tempat yang nyaman untuk menikmati kopi
+              dan menghabiskan waktu.
+            </p>
+
+          </figcaption>
+
+        </figure>
+
+
+        <!-- FOTO 2 -->
+
+        <figure class="media-card">
+
+          <div class="media-image">
+
+            <img
+              src="assets/images/proses-seduh.png"
+              alt="Proses menyeduh kopi"
+              loading="lazy"
+            >
+
+          </div>
+
+          <figcaption>
+
+            <h3>
+              Proses Pembuatan Kopi
+            </h3>
+
+            <p>
+              Proses penyeduhan kopi sebelum
+              disajikan kepada pelanggan.
+            </p>
+
+          </figcaption>
+
+        </figure>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================================
+         BAGIAN 2
+         ================================ -->
+
+    <section
+      class="gallery-section"
+      aria-labelledby="aktivitas-title"
+    >
+
+      <h2 id="aktivitas-title">
+        Aktivitas Kopi Nusantara
+      </h2>
+
+      <p class="gallery-intro">
+        Beberapa kegiatan yang menjadi bagian
+        dari aktivitas di kedai.
+      </p>
+
+
+      <div class="gallery-list">
+
+
+        <!-- FOTO 3 -->
+
+        <figure class="media-card">
+
+          <div class="media-image">
+
+            <img
+              src="assets/images/barista-espresso.png"
+              alt="Barista sedang membuat kopi"
+              loading="lazy"
+            >
+
+          </div>
+
+          <figcaption>
+
+            <h3>
+              Barista Kopi Nusantara
+            </h3>
+
+            <p>
+              Barista menyiapkan minuman dengan
+              memperhatikan kualitas penyajian.
+            </p>
+
+          </figcaption>
+
+        </figure>
+
+
+        <!-- FOTO 4 -->
+
+        <figure class="media-card">
+
+          <div class="media-image">
+
+            <img
+              src="assets/images/etalase-kopi.pnG"
+              alt="Etalase produk Kopi Nusantara"
+              loading="lazy"
+            >
+
+          </div>
+
+          <figcaption>
+
+            <h3>
+              Etalase Kopi
+            </h3>
+
+            <p>
+              Berbagai pilihan produk Kopi Nusantara
+              yang tersedia untuk pelanggan.
+            </p>
+
+          </figcaption>
+
+        </figure>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================================
+         BAGIAN 3
+         ================================ -->
+
+    <section
+      class="gallery-section"
+      aria-labelledby="detail-title"
+    >
+
+      <h2 id="detail-title">
+        Detail Kopi
+      </h2>
+
+      <p class="gallery-intro">
+        Melihat lebih dekat bahan dan peralatan
+        yang digunakan dalam proses pembuatan kopi.
+      </p>
+
+
+      <div class="gallery-list">
+
+
+        <!-- FOTO 5 -->
+
+        <figure class="media-card">
+
+          <div class="media-image">
+
+            <img
+              src="assets/images/biji-kopi.png"
+              alt="Biji kopi pilihan"
+              loading="lazy"
+            >
+
+          </div>
+
+          <figcaption>
+
+            <h3>
+              Biji Kopi
+            </h3>
+
+            <p>
+              Biji kopi menjadi bahan utama
+              dalam menghasilkan cita rasa.
+            </p>
+
+          </figcaption>
+
+        </figure>
+
+
+        <!-- FOTO 6 -->
+
+        <figure class="media-card">
+
+          <div class="media-image">
+
+            <img
+              src="assets/images/penggiling-kopi.png"
+              alt="Alat penggiling kopi"
+              loading="lazy"
+            >
+
+          </div>
+
+          <figcaption>
+
+            <h3>
+              Penggiling Kopi
+            </h3>
+
+            <p>
+              Peralatan yang digunakan untuk
+              mempersiapkan bubuk kopi.
+            </p>
+
+          </figcaption>
+
+        </figure>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================================
+         AUDIO
+         ================================ -->
+
+    <section
+  class="gallery-audio"
+  aria-labelledby="audio-title"
+>
+
+  <h2 id="audio-title">
+    Secangkir Rasa - Kopi Nusantara
+  </h2>
+
+  <p>
+    Dengarkan lagu sambil bersantai
+    dengan secangkir kopi.
+  </p>
+
+  <div class="custom-player">
+
+    <audio id="galleryMusic">
+      <source
+        src="assets/images/lagu-kopi.mp3"
+        type="audio/mpeg"
+      >
+    </audio>
+
+    <button
+      type="button"
+      id="musicToggle"
+      class="music-button"
+      aria-label="Putar musik"
+    >
+      ▶
+    </button>
+
+    <span id="musicCurrent">0:00</span>
+
+    <input
+      type="range"
+      id="musicProgress"
+      class="music-progress"
+      min="0"
+      max="0"
+      value="0"
+      step="0.1"
+      aria-label="Progress musik"
+    >
+
+    <span id="musicDuration">0:00</span>
+
+  </div>
+
+</section>
+
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+
+    <p>
+      &copy; 2026 Kopi Nusantara.
+    </p>
+
+  </footer>
+  <script src="js/script.js"></script>
+
+
+
+</body>
 </html>

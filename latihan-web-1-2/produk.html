@@ -8,114 +8,391 @@
   </head>
 
   <body>
-    <a class="skip-link" href="#konten">Lewati ke konten utama</a>
 
+    <a class="skip-link" href="#konten">
+      Lewati ke konten utama
+    </a>
+
+    <!-- HEADER -->
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="index.html">Kopi Nusantara</a>
+
+        <a class="brand" href="index.html">
+          Kopi Nusantara
+        </a>
 
         <nav class="nav" aria-label="Navigasi utama">
           <a href="index.html">Beranda</a>
           <a href="tentang.html">Tentang Kami</a>
           <a aria-current="page" href="produk.html">Produk</a>
           <a href="galeri.html">Galeri</a>
+          <a href="index.html#kontak">Kontak Singkat</a>
         </nav>
+
       </div>
     </header>
 
+
+    <!-- KONTEN UTAMA -->
     <main id="konten" class="page">
-      <h1>Produk Kopi Nusantara</h1>
-      <p>Pilih produk sesuai kebutuhan seduh harian, kantor, atau hadiah.</p>
 
-      <section aria-labelledby="kategori-title">
-        <h2 id="kategori-title">Kategori Produk</h2>
-        
-        <h3>☕ Varian Kopi</h3>
-        <ul>
-            <li>Kopi Tubruk Signature</li>
-            <li>Cold Brew Aren</li>
-            <li>Americano</li>
-            <li>Cafe Latte</li>
-            <li>Kopi Susu Gula Aren</li>
-        </ul>
-        
-        <h3>🥤 Varian Non-Kopi</h3>
-        <ul>
-            <li>Matcha Latte</li>
-            <li>Chocolate</li>
-            <li>Lemon Tea</li>
-        </ul>
-    </section>
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="produk-title">
 
-      <section aria-labelledby="harga-title">
-        <h2 id="harga-title">Daftar Harga</h2>
+        <p class="eyebrow">
+          Pilihan Menu
+        </p>
+
+        <h1 id="produk-title">
+          Produk Kopi Nusantara
+        </h1>
+
+        <p>
+          Pilihan kopi dan minuman lainnya untuk menemani
+          aktivitas sehari-hari.
+        </p>
+
+      </section>
+
+
+      <!-- PRODUK -->
+      <section aria-labelledby="produk-kami-title">
+
+        <h2 id="produk-kami-title">
+          Produk Kami
+        </h2>
+
+        <div class="product-list">
+
+          <!-- 1. KOPI TUBRUK -->
+          <article class="product-card">
+
+            <img
+              class="product-image"
+              src="assets/images/kopi-tubruk-signature.png"
+              alt="Secangkir kopi tubruk signature di atas meja kayu"
+            >
+
+            <div class="product-content">
+
+              <h3>
+                Kopi Tubruk Signature
+              </h3>
+
+              <p>
+                Kopi tubruk dengan rasa kuat dan aroma khas
+                untuk menemani aktivitas harian.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- 2. COLD BREW AREN -->
+          <article class="product-card">
+
+            <img
+              class="product-image"
+              src="assets/images/cold-brew-aren.png"
+              alt="Gelas cold brew aren di atas meja kayu"
+            >
+
+            <div class="product-content">
+
+              <h3>
+                Cold Brew Aren
+              </h3>
+
+              <p>
+                Cold brew segar dengan manis gula aren yang
+                cocok diminum saat cuaca panas.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- 3. AMERICANO -->
+          <article class="product-card">
+
+            <img
+              class="product-image"
+              src="assets/images/americano.png"
+              alt="Secangkir americano hitam di atas meja kayu"
+            >
+
+            <div class="product-content">
+
+              <h3>
+                Americano
+              </h3>
+
+              <p>
+                Kopi hitam klasik dengan rasa bold dan
+                sedikit asam.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- 4. CAFE LATTE -->
+          <article class="product-card">
+
+            <img
+              class="product-image"
+              src="assets/images/cafe-latte.png"
+              alt="Secangkir cafe latte dengan latte art"
+            >
+
+            <div class="product-content">
+
+              <h3>
+                Cafe Latte
+              </h3>
+
+              <p>
+                Perpaduan espresso dan susu bertekstur lembut
+                dengan rasa yang seimbang.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- 5. KOPI SUSU GULA AREN -->
+          <article class="product-card">
+
+            <img
+              class="product-image"
+              src="assets/images/kopi-susu-gula-aren.png"
+              alt="Gelas kopi susu gula aren di atas meja kayu"
+            >
+
+            <div class="product-content">
+
+              <h3>
+                Kopi Susu Gula Aren
+              </h3>
+
+              <p>
+                Kopi pilihan dengan susu segar dan gula
+                aren asli.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- 6. MATCHA LATTE -->
+          <article class="product-card">
+
+            <img
+              class="product-image"
+              src="assets/images/matcha-latte.png"
+              alt="Gelas matcha latte dengan lapisan susu"
+            >
+
+            <div class="product-content">
+
+              <h3>
+                Matcha Latte
+              </h3>
+
+              <p>
+                Perpaduan matcha premium dengan susu
+                yang lembut.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- 7. CHOCOLATE -->
+          <article class="product-card">
+
+            <img
+              class="product-image"
+              src="assets/images/chocolate.png"
+              alt="Secangkir chocolate dengan krim di atasnya"
+            >
+
+            <div class="product-content">
+
+              <h3>
+                Chocolate
+              </h3>
+
+              <p>
+                Cokelat hangat dengan rasa manis yang pas
+                dan tekstur creamy.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- 8. LEMON TEA -->
+          <article class="product-card">
+
+            <img
+              class="product-image"
+              src="assets/images/lemon-tea.png"
+              alt="Gelas lemon tea dengan irisan lemon"
+            >
+
+            <div class="product-content">
+
+              <h3>
+                Lemon Tea
+              </h3>
+
+              <p>
+                Teh segar dengan perasan lemon alami yang
+                menyegarkan.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- 9. CAPPUCCINO -->
+          <article class="product-card">
+
+            <img
+              class="product-image"
+              src="assets/images/cappuccino.png"
+              alt="Secangkir cappuccino dengan busa susu"
+            >
+
+            <div class="product-content">
+
+              <h3>
+                Cappuccino
+              </h3>
+
+              <p>
+                Cappuccino dengan rasa kopi lembut dan
+                lapisan busa susu.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- TABEL HARGA -->
+      <section
+        class="price-section"
+        aria-labelledby="harga-title"
+      >
+
+        <h2 id="harga-title">
+          Daftar Harga
+        </h2>
 
         <table>
-          <caption>Daftar harga produk Kopi Nusantara</caption>
+
+          <caption>
+            Daftar harga produk Kopi Nusantara
+          </caption>
 
           <thead>
+
             <tr>
               <th scope="col">Produk</th>
               <th scope="col">Ukuran</th>
               <th scope="col">Harga</th>
             </tr>
+
           </thead>
 
           <tbody>
+
             <tr>
-                <th scope="row">Kopi Tubruk Signature</th>
-                <td>250 ml</td>
-                <td>Rp25.000</td>
+              <th scope="row">Kopi Tubruk Signature</th>
+              <td>250 ml</td>
+              <td>Rp25.000</td>
             </tr>
-            
+
             <tr>
-                <th scope="row">Cold Brew Aren</th>
-                <td>250 ml</td>
-                <td>Rp30.000</td>
+              <th scope="row">Cold Brew Aren</th>
+              <td>250 ml</td>
+              <td>Rp30.000</td>
             </tr>
-            
+
             <tr>
-                <th scope="row">Americano</th>
-                <td>250 ml</td>
-                <td>Rp20.000</td>
+              <th scope="row">Americano</th>
+              <td>250 ml</td>
+              <td>Rp20.000</td>
             </tr>
-            
+
             <tr>
-                <th scope="row">Cafe Latte</th>
-                <td>250 ml</td>
-                <td>Rp25.000</td>
+              <th scope="row">Cafe Latte</th>
+              <td>250 ml</td>
+              <td>Rp25.000</td>
             </tr>
-            
+
             <tr>
-                <th scope="row">Kopi Susu Gula Aren</th>
-                <td>250 ml</td>
-                <td>Rp23.000</td>
+              <th scope="row">Kopi Susu Gula Aren</th>
+              <td>250 ml</td>
+              <td>Rp28.000</td>
             </tr>
-            
+
             <tr>
-                <th scope="row">Matcha Latte</th>
-                <td>250 ml</td>
-                <td>Rp25.000</td>
+              <th scope="row">Matcha Latte</th>
+              <td>250 ml</td>
+              <td>Rp40.000</td>
             </tr>
-            
+
             <tr>
-                <th scope="row">Chocolate</th>
-                <td>250 ml</td>
-                <td>Rp23.000</td>
+              <th scope="row">Chocolate</th>
+              <td>250 ml</td>
+              <td>Rp25.000</td>
             </tr>
-            
+
             <tr>
-                <th scope="row">Lemon Tea</th>
-                <td>250 ml</td>
-                <td>Rp18.000</td>
+              <th scope="row">Lemon Tea</th>
+              <td>250 ml</td>
+              <td>Rp20.000</td>
             </tr>
+
+            <tr>
+              <th scope="row">Cappuccino</th>
+              <td>250 ml</td>
+              <td>Rp28.000</td>
+            </tr>
+
           </tbody>
+
         </table>
+
       </section>
+
     </main>
 
+
+    <!-- FOOTER -->
     <footer class="site-footer">
-      <p>&copy; 2026 Kopi Nusantara.</p>
+
+      <p>
+        &copy; 2026 Kopi Nusantara.
+      </p>
+
     </footer>
+
   </body>
 </html>
+```
