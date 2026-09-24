@@ -1272,3 +1272,60 @@ td {
     height: 240px;
   }
 }
+
+/* ================================
+   P04 - Form Kontak
+   ================================ */
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.field small {
+  display: block;
+  margin-top: 4px;
+}
+
+fieldset {
+  margin: 0 0 16px;
+  padding: 16px;
+}
+
+fieldset label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+fieldset label:last-child {
+  margin-bottom: 0;
+}
+
+#form-kontak button {
+  margin-top: 8px;
+}
+
+.preview-section {
+  margin-top: 32px;
+}
+
+#preview-form {
+  padding: 16px;
+  white-space: pre-wrap;
+  background: white;
+  border: 1px solid #dccbbc;
+  border-radius: 8px;
+  overflow-x: auto;
+}
