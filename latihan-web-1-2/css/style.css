@@ -61,6 +61,7 @@ body {
   color: #4b2e21;
   font-weight: 800;
   text-decoration: none;
+  margin-bottom: 0;
 }
 
 nav {
@@ -131,6 +132,30 @@ main {
   padding: 34px;
 }
 
+.home-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: var(--radius-md);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
 .eyebrow {
   margin: 0 0 8px;
   letter-spacing: 0.14em;
@@ -184,6 +209,15 @@ button {
   border-radius: 16px;
   background: white;
   border: 1px solid #e5d7ca;
+}
+
+.product-grid .product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-2);
 }
 
 .product-image {
@@ -906,6 +940,31 @@ td {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.product-badge {
+  align-self: flex-start;
+  padding: 0.25rem var(--space-2);
+  color: var(--color-primary-strong);
+  font-size: 0.875rem;
+  font-weight: 800;
+  background: #fef3c7;
+  border-radius: 999px;
+}
+
+.card-actions {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(80, 50, 30, 0.13);
@@ -1122,6 +1181,9 @@ td {
   background: #fffaf3;
   border: 1px solid #e1cbb5;
   border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
 }
 
 .gallery-audio h2 {
@@ -1137,7 +1199,7 @@ td {
 .custom-player {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: var(--space-2);
 
   width: 100%;
   max-width: 760px;
