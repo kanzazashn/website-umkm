@@ -14,28 +14,34 @@
 
 <body>
 
-  <header class="site-header">
+    <header class="site-header">
     <div class="header-inner">
+      <a class="brand" href="index.html">Kopi Nusantara</a>
 
-      <a class="brand" href="index.html">
-        Kopi Nusantara
-      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        ☰
+      </button>
 
-      <nav aria-label="Navigasi utama">
+      <nav class="nav" id="main-nav" aria-label="Navigasi utama">
         <a href="index.html">Beranda</a>
         <a href="tentang.html">Tentang Kami</a>
         <a href="produk.html">Produk</a>
         <a href="galeri.html">Galeri</a>
         <a aria-current="page" href="kontak.html">Kontak</a>
       </nav>
-
     </div>
   </header>
 
 
   <main id="konten">
 
-    <section class="hero" aria-labelledby="kontak-title">
+    <section class="hero about-page-hero" aria-labelledby="kontak-title">
 
       <p class="eyebrow">
         Hubungi Kami
@@ -292,8 +298,8 @@
       Data pada halaman ini bersifat dummy.
     </p>
 
-  </footer>
+      </footer>
 
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>

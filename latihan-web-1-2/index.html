@@ -1,313 +1,315 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kopi Nusantara - Website UMKM</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kopi Nusantara - Website UMKM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <body>
-    <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
 
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="index.html">Kopi Nusantara</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Kopi Nusantara</a>
 
-        <nav class="nav" aria-label="Navigasi utama">
-          <a aria-current="page" href="index.html">Beranda</a>
-          <a href="tentang.html">Tentang Kami</a>
-          <a href="produk.html">Produk</a>
-          <a href="galeri.html">Galeri</a>
-          <a href="kontak.html">Kontak</a>
-        </nav>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        ☰
+      </button>
+
+      <nav class="nav" id="main-nav" aria-label="Navigasi utama">
+        <a aria-current="page" href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="produk.html">Produk</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten">
+    <section class="hero home-hero" aria-labelledby="hero-title">
+      <div class="hero-content home-hero-content">
+        <p class="eyebrow">UMKM Pekalongan</p>
+        <h1 id="hero-title">Kopi Nusantara</h1>
+        <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
+        <button id="promoButton" type="button">Lihat promo hari ini</button>
       </div>
-    </header>
 
-    <main id="konten">
-
-      <section class="hero home-hero" aria-labelledby="hero-title">
-
-  <div class="hero-content">
-    <p class="eyebrow">UMKM Pekalongan</p>
-
-    <h1 id="hero-title">Kopi Nusantara</h1>
-
-    <p>
-      Kopi lokal pilihan untuk teman belajar,
-      bekerja, dan berdiskusi.
-    </p>
-
-    <button id="promoButton" type="button">
-      Lihat promo hari ini
-    </button>
-  </div>
-
-  <div class="hero-image">
-    <img
-      src="assets/images/suasana-kedai.png"
-      alt="Suasana kedai Kopi Nusantara"
-    >
-  </div>
-
-</section>
-
-      <section id="profil" class="profil" aria-labelledby="profil-title">
-        <h2 id="profil-title">Profil Singkat</h2>
-
+      <div class="hero-image home-hero-image">
         <img
-          class="profile-image"
-          src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=640&q=80"
-          alt="Secangkir kopi hitam di atas meja kayu"
+          src="assets/images/suasana-kedai.png"
+          width="640"
+          height="360"
+          alt="Suasana kedai Kopi Nusantara"
         >
+      </div>
+    </section>
 
-        <div class="info-cards">
-          </div>
+    <section id="profil" class="profil" aria-labelledby="profil-title">
+      <h2 id="profil-title">Profil Singkat</h2>
 
-<h2>Keunggulan Kopi Nusantara</h2>
+      <img
+        class="profile-image"
+        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=640&q=80"
+        width="640"
+        height="640"
+        loading="lazy"
+        alt="Secangkir kopi hitam di atas meja kayu"
+      >
 
-<div class="info-cards">
+      <h2>Keunggulan Kopi Nusantara</h2>
 
-          
-
-  <div class="info-card">
-    <h3>🌱 Bahan Lokal</h3>
-    <p>
-      Biji kopi dipilih dari petani sekitar
-      untuk menjaga kualitas dan cita rasa.
-    </p>
-  </div>
-
-  <div class="info-card">
-    <h3>☕ Batch Kecil</h3>
-    <p>
-      Produk dibuat dalam batch kecil
-      agar kualitas kopi tetap terjaga.
-    </p>
-  </div>
-
-  <div class="info-card">
-    <h3>📱 Pemesanan Mudah</h3>
-    <p>
-      Pemesanan produk tersedia dengan mudah
-      melalui WhatsApp.
-    </p>
-  </div>
-
-</div>
-      </section>
-
-      <section aria-labelledby="produk-title">
-        <h2 id="produk-title">Produk Unggulan</h2>
-
-        <div class="product-list">
-          <article class="product-card">
-            <img
-      class="product-image"
-      src="assets/images/kopi-tubruk-signature.png"
-      alt="Secangkir kopi tubruk signature di atas meja kayu"
-    >
-    <div class="product-content">
-      <h3>Kopi Tubruk Signature</h3>
-      <p>Kopi tubruk dengan rasa kuat dan aroma khas untuk menemani aktivitas harian.</p>
-      <p class="price">Rp25.000</p>
-    </div>
-  </article>
-
-  <article class="product-card">
-    <img
-      class="product-image"
-      src="assets/images/cold-brew-aren.png"
-      alt="Gelas cold brew aren di atas meja kayu"
-    >
-    <div class="product-content">
-      <h3>Cold Brew Aren</h3>
-      <p>Cold brew segar dengan manis gula aren yang cocok diminum saat cuaca panas.</p>
-      <p class="price">Rp30.000</p>
-    </div>
-  </article>
-
-  <article class="product-card">
-    <img
-      class="product-image"
-      src="assets/images/americano.png"
-      alt="Secangkir americano hitam di atas meja kayu"
-    >
-    <div class="product-content">
-      <h3>Americano</h3>
-      <p>Kopi hitam klasik dengan rasa bold dan sedikit asam.</p>
-      <p class="price">Rp20.000</p>
-    </div>
-  </article>
-
-  <article class="product-card">
-    <img
-      class="product-image"
-      src="assets/images/cafe-latte.png"
-      alt="Secangkir cafe latte dengan latte art"
-    >
-    <div class="product-content">
-      <h3>Cafe Latte</h3>
-      <p>Perpaduan espresso dan susu bertekstur lembut dengan rasa seimbang.</p>
-      <p class="price">Rp25.000</p>
-    </div>
-  </article>
-
-  <article class="product-card">
-    <img
-      class="product-image"
-      src="assets/images/kopi-susu-gula-aren.png"
-      alt="Gelas kopi susu gula aren di atas meja kayu"
-    >
-    <div class="product-content">
-      <h3>Kopi Susu Gula Aren</h3>
-      <p>Kopi pilihan dengan susu segar dan gula aren asli.</p>
-      <p class="price">Rp28.000</p>
-    </div>
-  </article>
-
-  <article class="product-card">
-    <img
-      class="product-image"
-      src="assets/images/matcha-latte.png"
-      alt="Gelas matcha latte dengan lapisan susu"
-    >
-    <div class="product-content">
-      <h3>Matcha Latte</h3>
-      <p>Perpaduan teh hijau premium dengan susu yang lembut.</p>
-      <p class="price">Rp40.000</p>
-    </div>
-  </article>
-
-  <article class="product-card">
-    <img
-      class="product-image"
-      src="assets/images/chocolate.png"
-      alt="Secangkir chocolate dengan krim di atasnya"
-    >
-    <div class="product-content">
-      <h3>Chocolate</h3>
-      <p>Cokelat hangat dengan rasa manis pas dan tekstur creamy.</p>
-      <p class="price">Rp25.000</p>
-    </div>
-  </article>
-
-  <article class="product-card">
-    <img
-      class="product-image"
-      src="assets/images/lemon-tea.png"
-      alt="Gelas lemon tea dengan irisan lemon"
-    >
-    <div class="product-content">
-      <h3>Lemon Tea</h3>
-      <p>Teh segar dengan perasan lemon alami yang menyegarkan.</p>
-      <p class="price">Rp20.000</p>
-    </div>
-  </article>
-
-  <article class="product-card">
-    <img
-      class="product-image"
-      src="assets/images/cappuccino.png"
-      alt="Secangkir cappuccino dengan busa susu di atas meja"
-    >
-    <div class="product-content">
-      <h3>Cappuccino</h3>
-      <p>Cappuccino 250 ml dengan rasa kopi lembut dan lapisan busa susu.</p>
-      <p class="price">Rp28.000</p>
-    </div>
-  </article>
-</div>
-          </article>
-
+      <div class="info-cards">
+        <div class="info-card">
+          <h3>🌱 Bahan Lokal</h3>
+          <p>Biji kopi dipilih dari petani sekitar untuk menjaga kualitas dan cita rasa.</p>
         </div>
-      </section>
 
-      <section class="keunggulan" aria-labelledby="keunggulan-title">
-  <h2 id="keunggulan-title">Kenapa Pilih Kopi Nusantara?</h2>
+        <div class="info-card">
+          <h3>☕ Batch Kecil</h3>
+          <p>Produk dibuat dalam batch kecil agar kualitas kopi tetap terjaga.</p>
+        </div>
 
-  <p class="keunggulan-intro">
-    Kami menghadirkan kopi dengan cita rasa khas, kualitas yang terjaga,
-    dan pilihan yang cocok untuk menemani aktivitas sehari-hari.
-  </p>
+        <div class="info-card">
+          <h3>📱 Pemesanan Mudah</h3>
+          <p>Pemesanan produk tersedia dengan mudah melalui WhatsApp.</p>
+        </div>
+      </div>
+    </section>
 
-  <div class="keunggulan-list">
-    <article class="keunggulan-card">
-      <div class="keunggulan-icon">☕</div>
-      <h3>Biji Kopi Lokal</h3>
-      <p>
-        Menggunakan biji kopi pilihan dari petani lokal untuk menghasilkan
-        cita rasa khas.
+    <section aria-labelledby="produk-title">
+      <h2 id="produk-title">Produk Unggulan</h2>
+
+      <div class="product-list">
+        <article class="product-card">
+          <img
+            class="product-image"
+            src="assets/images/kopi-tubruk-signature.png"
+            width="640"
+            height="640"
+            loading="lazy"
+            alt="Secangkir kopi tubruk signature di atas meja kayu"
+          >
+          <div class="product-content">
+            <h3>Kopi Tubruk Signature</h3>
+            <p>Kopi tubruk dengan rasa kuat dan aroma khas untuk menemani aktivitas harian.</p>
+            <p class="price">Rp25.000</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            class="product-image"
+            src="assets/images/cold-brew-aren.png"
+            width="640"
+            height="640"
+            loading="lazy"
+            alt="Gelas cold brew aren di atas meja kayu"
+          >
+          <div class="product-content">
+            <h3>Cold Brew Aren</h3>
+            <p>Cold brew segar dengan manis gula aren yang cocok diminum saat cuaca panas.</p>
+            <p class="price">Rp30.000</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            class="product-image"
+            src="assets/images/americano.png"
+            width="640"
+            height="640"
+            loading="lazy"
+            alt="Secangkir americano hitam di atas meja kayu"
+          >
+          <div class="product-content">
+            <h3>Americano</h3>
+            <p>Kopi hitam klasik dengan rasa bold dan sedikit asam.</p>
+            <p class="price">Rp20.000</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            class="product-image"
+            src="assets/images/cafe-latte.png"
+            width="640"
+            height="640"
+            loading="lazy"
+            alt="Secangkir cafe latte dengan latte art"
+          >
+          <div class="product-content">
+            <h3>Cafe Latte</h3>
+            <p>Perpaduan espresso dan susu bertekstur lembut dengan rasa seimbang.</p>
+            <p class="price">Rp25.000</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            class="product-image"
+            src="assets/images/kopi-susu-gula-aren.png"
+            width="640"
+            height="640"
+            loading="lazy"
+            alt="Gelas kopi susu gula aren di atas meja kayu"
+          >
+          <div class="product-content">
+            <h3>Kopi Susu Gula Aren</h3>
+            <p>Kopi pilihan dengan susu segar dan gula aren asli.</p>
+            <p class="price">Rp28.000</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            class="product-image"
+            src="assets/images/matcha-latte.png"
+            width="640"
+            height="640"
+            loading="lazy"
+            alt="Gelas matcha latte dengan lapisan susu"
+          >
+          <div class="product-content">
+            <h3>Matcha Latte</h3>
+            <p>Perpaduan teh hijau premium dengan susu yang lembut.</p>
+            <p class="price">Rp40.000</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            class="product-image"
+            src="assets/images/chocolate.png"
+            width="640"
+            height="640"
+            loading="lazy"
+            alt="Secangkir chocolate dengan krim di atasnya"
+          >
+          <div class="product-content">
+            <h3>Chocolate</h3>
+            <p>Cokelat hangat dengan rasa manis pas dan tekstur creamy.</p>
+            <p class="price">Rp25.000</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            class="product-image"
+            src="assets/images/lemon-tea.png"
+            width="640"
+            height="640"
+            loading="lazy"
+            alt="Gelas lemon tea dengan irisan lemon"
+          >
+          <div class="product-content">
+            <h3>Lemon Tea</h3>
+            <p>Teh segar dengan perasan lemon alami yang menyegarkan.</p>
+            <p class="price">Rp20.000</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            class="product-image"
+            src="assets/images/cappuccino.png"
+            width="640"
+            height="640"
+            loading="lazy"
+            alt="Secangkir cappuccino dengan busa susu di atas meja"
+          >
+          <div class="product-content">
+            <h3>Cappuccino</h3>
+            <p>Cappuccino 250 ml dengan rasa kopi lembut dan lapisan busa susu.</p>
+            <p class="price">Rp28.000</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="keunggulan" aria-labelledby="keunggulan-title">
+      <h2 id="keunggulan-title">Kenapa Pilih Kopi Nusantara?</h2>
+
+      <p class="keunggulan-intro">
+        Kami menghadirkan kopi dengan cita rasa khas, kualitas yang terjaga,
+        dan pilihan yang cocok untuk menemani aktivitas sehari-hari.
       </p>
-    </article>
 
-    <article class="keunggulan-card">
-      <div class="keunggulan-icon">🌿</div>
-      <h3>Dibuat Fresh</h3>
-      <p>
-        Produk dibuat dalam batch kecil agar kualitas dan kesegaran kopi
-        tetap terjaga.
-      </p>
-    </article>
+      <div class="keunggulan-list">
+        <article class="keunggulan-card">
+          <div class="keunggulan-icon">☕</div>
+          <h3>Biji Kopi Lokal</h3>
+          <p>Menggunakan biji kopi pilihan dari petani lokal untuk menghasilkan cita rasa khas.</p>
+        </article>
 
-    <article class="keunggulan-card">
-      <div class="keunggulan-icon">📦</div>
-      <h3>Siap Dipesan</h3>
-      <p>
-        Berbagai pilihan minuman tersedia untuk menemani aktivitas belajar,
-        bekerja, dan bersantai.
-      </p>
-    </article>
-  </div>
-</section>
+        <article class="keunggulan-card">
+          <div class="keunggulan-icon">🌿</div>
+          <h3>Dibuat Fresh</h3>
+          <p>Produk dibuat dalam batch kecil agar kualitas dan kesegaran kopi tetap terjaga.</p>
+        </article>
 
-      <section id="lokasi" class="info-section" aria-labelledby="info-title">
-  <h2 id="info-title">Jam Buka &amp; Lokasi</h2>
+        <article class="keunggulan-card">
+          <div class="keunggulan-icon">📦</div>
+          <h3>Siap Dipesan</h3>
+          <p>Berbagai pilihan minuman tersedia untuk menemani aktivitas belajar, bekerja, dan bersantai.</p>
+        </article>
+      </div>
+    </section>
 
-  <div class="info-wide-card">
-    <div>
-      <h3>🕘 Jam Buka</h3>
-      <p>Senin–Sabtu, 09.00–23.00 WIB</p>
-    </div>
+    <section id="lokasi" class="info-section" aria-labelledby="info-title">
+      <h2 id="info-title">Jam Buka &amp; Lokasi</h2>
 
-    <div>
-      <h3>📍 Lokasi</h3>
-      <p>Jl. Diponegoro No. 10, Pekalongan</p>
-    </div>
-  </div>
-</section>
+      <div class="info-wide-card">
+        <div>
+          <h3>🕘 Jam Buka</h3>
+          <p>Senin–Sabtu, 09.00–23.00 WIB</p>
+        </div>
 
-      <section id="kontak" class="info-section" aria-labelledby="kontak-title">
-  <h2 id="kontak-title">Kontak Singkat</h2>
+        <div>
+          <h3>📍 Lokasi</h3>
+          <p>Jl. Diponegoro No. 10, Pekalongan</p>
+        </div>
+      </div>
+    </section>
 
-  <div class="contact-card">
-    <div>
-      <h3>💬 WhatsApp</h3>
-      <p>
-        <a href="https://wa.me/6281200000000" target="_blank" rel="noopener noreferrer">
-          0812-0000-0000
-        </a>
-      </p>
-    </div>
+    <section id="kontak" class="info-section" aria-labelledby="kontak-title">
+      <h2 id="kontak-title">Kontak Singkat</h2>
 
-    <div>
-      <h3>✉️ Email</h3>
-      <p>halo@kopinusantara.com</p>
-    </div>
+      <div class="contact-card">
+        <div>
+          <h3>💬 WhatsApp</h3>
+          <p>
+            <a href="https://wa.me/6281200000000" target="_blank" rel="noopener noreferrer">
+              0812-0000-0000
+            </a>
+          </p>
+        </div>
 
-    <div>
-      <h3>📷 Instagram</h3>
-      <p>@kopinusantara</p>
-    </div>
-  </div>
-</section>
+        <div>
+          <h3>✉️ Email</h3>
+          <p>halo@kopinusantara.com</p>
+        </div>
 
-    </main>
+        <div>
+          <h3>📷 Instagram</h3>
+          <p>@kopinusantara</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <footer class="site-footer">
-      <p>Hubungi Kopi Nusantara melalui WhatsApp: 0812-0000-0000</p>
-    </footer>
+  <footer class="site-footer">
+    <p>Hubungi Kopi Nusantara melalui WhatsApp: 0812-0000-0000</p>
+  </footer>
 
-    <script src="js/script.js"></script>
-  </body>
+  <script src="js/script.js"></script>
+</body>
 </html>

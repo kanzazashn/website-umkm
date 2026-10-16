@@ -10,23 +10,35 @@
   <body>
     <a class="skip-link" href="#konten">Lewati ke konten utama</a>
 
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="index.html">Kopi Nusantara</a>
+    
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Kopi Nusantara</a>
 
-        <nav aria-label="Navigasi utama">
-          <a href="index.html">Beranda</a>
-          <a aria-current="page" href="tentang.html">Tentang Kami</a>
-          <a href="produk.html">Produk</a>
-          <a href="galeri.html">Galeri</a>
-          <a href="kontak.html">Kontak</a>
-        </nav>
-      </div>
-    </header>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Buka menu navigasi"
+      aria-expanded="false"
+      aria-controls="main-nav"
+    >
+      ☰
+    </button>
+
+    <nav class="nav" id="main-nav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a aria-current="page" href="tentang.html">Tentang Kami</a>
+      <a href="produk.html">Produk</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+
 
     <main id="konten">
 
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero about-page-hero" aria-labelledby="hero-title">
         <p class="eyebrow">Tentang UMKM</p>
         <h1 id="hero-title">Tentang Kopi Nusantara</h1>
         <p>Kopi lokal pilihan untuk menemani aktivitas sehari-hari.</p>
@@ -34,12 +46,17 @@
 
       <section class="story-section" aria-labelledby="cerita-title">
 
-  <div class="story-image">
-    <img
-      src="assets/images/tentang-kami.png.png"
-      alt="Secangkir latte di atas meja kayu dalam suasana kedai kopi yang hangat"
-    >
-  </div>
+  
+<div class="story-image">
+  <img
+    src="assets/images/tentang-kami.png.png"
+    width="640"
+    height="360"
+    loading="lazy"
+    alt="Secangkir latte di atas meja kayu dalam suasana kedai kopi yang hangat"
+  >
+</div>
+
 
   <div class="story-content">
 
@@ -86,19 +103,19 @@
     <div class="value-card">
       <div class="value-icon">☕</div>
       <div class="value-divider"></div>
-      <p>Mengutamakan<br>bahan lokal.</p>
+      <p>Mengutamakan bahan lokal.</p>
     </div>
 
     <div class="value-card">
       <div class="value-icon">★</div>
       <div class="value-divider"></div>
-      <p>Menjaga rasa dan<br>kualitas produk.</p>
+      <p>Menjaga rasa dan kualitas produk.</p>
     </div>
 
     <div class="value-card">
       <div class="value-icon">♡</div>
       <div class="value-divider"></div>
-      <p>Memberikan pelayanan<br>yang ramah.</p>
+      <p>Memberikan pelayanan yang ramah.</p>
     </div>
 
   </div>
@@ -113,4 +130,3 @@
     <script src="js/script.js"></script>
   </body>
 </html>
-

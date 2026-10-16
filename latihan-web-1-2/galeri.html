@@ -13,12 +13,35 @@
   <style>
     
     .gallery-hero {
-      display: grid;
-      grid-template-columns: 1.4fr 0.8fr;
-      align-items: center;
-      gap: 30px;
-      padding: 30px;
-    }
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.8fr);
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+@media (max-width: 600px) {
+  .gallery-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .gallery-hero-text {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .gallery-hero h1 {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+    overflow-wrap: anywhere;
+  }
+
+  .gallery-hero-image {
+    width: 100%;
+    height: 220px;
+  }
+}
 
     .gallery-hero-text {
       min-width: 0;
@@ -133,41 +156,31 @@
     Lewati ke konten utama
   </a>
 
-  <header class="site-header">
+  
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Kopi Nusantara</a>
 
-    <div class="header-inner">
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Buka menu navigasi"
+      aria-expanded="false"
+      aria-controls="main-nav"
+    >
+      ☰
+    </button>
 
-      <a class="brand" href="index.html">
-        Kopi Nusantara
-      </a>
+    <nav class="nav" id="main-nav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="produk.html">Produk</a>
+      <a aria-current="page" href="galeri.html">Galeri</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </div>
+</header>
 
-      <nav class="nav" aria-label="Navigasi utama">
-
-  <a href="index.html">
-    Beranda
-  </a>
-
-  <a href="tentang.html">
-    Tentang Kami
-  </a>
-
-  <a href="produk.html">
-    Produk
-  </a>
-
-  <a aria-current="page" href="galeri.html">
-    Galeri
-  </a>
-
-  <a href="kontak.html">
-    Kontak
-  </a>
-
-</nav>
-
-    </div>
-
-  </header>
 
 
   <!-- KONTEN -->
@@ -201,6 +214,9 @@
         <img
           src="assets/images/suasana-kedai.png"
           alt="Suasana kedai Kopi Nusantara"
+          loading="lazy"
+          width="640"
+          height="360"
         >
 
       </div>
@@ -241,6 +257,8 @@
               src="assets/images/suasana-kedai.png"
               alt="Suasana kedai Kopi Nusantara"
               loading="lazy"
+              width="640"
+              height="360"
             >
 
           </div>
@@ -271,6 +289,8 @@
               src="assets/images/proses-seduh.png"
               alt="Proses menyeduh kopi"
               loading="lazy"
+              width="640"
+              height="360"
             >
 
           </div>
@@ -329,6 +349,8 @@
               src="assets/images/barista-espresso.png"
               alt="Barista sedang membuat kopi"
               loading="lazy"
+              width="640"
+              height="360"
             >
 
           </div>
@@ -359,6 +381,8 @@
               src="assets/images/etalase-kopi.pnG"
               alt="Etalase produk Kopi Nusantara"
               loading="lazy"
+              width="640"
+              height="360"
             >
 
           </div>
@@ -417,6 +441,8 @@
               src="assets/images/biji-kopi.png"
               alt="Biji kopi pilihan"
               loading="lazy"
+              width="640"
+              height="360"
             >
 
           </div>
@@ -447,6 +473,8 @@
               src="assets/images/penggiling-kopi.png"
               alt="Alat penggiling kopi"
               loading="lazy"
+              width="640"
+              height="360"
             >
 
           </div>
