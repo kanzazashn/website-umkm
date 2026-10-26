@@ -168,42 +168,15 @@
 </div>
 </section>
 <section aria-labelledby="produk-pilihan-title">
-<h2 id="produk-pilihan-title">Produk Pilihan</h2>
-<div class="product-grid">
-<article class="product-card">
-<img alt="Secangkir kopi tubruk signature" class="product-image" height="230" src="assets/images/kopi-tubruk-signature.png" width="366"/>
-<span class="product-badge">Terlaris</span>
-<h3>Kopi Tubruk Signature</h3>
-<p>Karakter cokelat dan kacang dengan body yang kuat.</p>
-<p class="price">Rp38.000</p>
-<div class="card-actions">
-<a class="button" href="kontak.html">Tanya produk</a>
-<a href="#harga-title">Lihat tabel harga</a>
-</div>
-</article>
-<article class="product-card">
-<img alt="Lemon tea" class="product-image" height="233" src="assets/images/lemon-tea.png" width="363"/>
-<span class="product-badge">Segar</span>
-<h3>Lemon Tea</h3>
-<p>Minuman teh segar dengan rasa lemon yang ringan dan menyegarkan.</p>
-<p class="price">Rp20.000</p>
-<div class="card-actions">
-<a class="button" href="kontak.html">Tanya produk</a>
-<a href="#harga-title">Lihat tabel harga</a>
-</div>
-</article>
-<article class="product-card">
-<img alt="Matcha latte" class="product-image" height="233" src="assets/images/matcha-latte.png" width="366"/>
-<span class="product-badge">Favorit</span>
-<h3>Matcha Latte</h3>
-<p>Minuman matcha creamy dengan rasa lembut dan sedikit manis.</p>
-<p class="price">Rp40.000</p>
-<div class="card-actions">
-<a class="button" href="kontak.html">Tanya produk</a>
-<a href="#harga-title">Lihat tabel harga</a>
-</div>
-</article>
-</div>
+  <h2 id="produk-pilihan-title">Produk Pilihan</h2>
+
+  <div class="product-grid" id="produk-dinamis">
+    <p>Produk sedang dimuat...</p>
+  </div>
+
+  <p id="ringkasan-produk" aria-live="polite">
+    Menyiapkan katalog produk...
+  </p>
 </section>
 <!-- TABEL HARGA -->
 <section aria-labelledby="harga-title" class="price-section">
@@ -280,5 +253,6 @@
       </p>
 </footer>
 <script src="js/script.js"></script>
+<script src="js/app.js" defer></script>
 </body>
 </html>

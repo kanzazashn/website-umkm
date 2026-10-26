@@ -1852,3 +1852,29 @@ fieldset label:last-child {
   }
   .value-card p { white-space: normal; }
 }
+
+
+/* Badge status stok produk */
+.stock-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.stock-badge.tersedia {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.stock-badge.terbatas {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.stock-badge.habis {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
