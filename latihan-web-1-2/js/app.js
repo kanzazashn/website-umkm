@@ -42,6 +42,50 @@ const formatRupiah = (harga) =>
     maximumFractionDigits: 0
   }).format(harga);
 
+// Menentukan status stok produk
+function statusStok(stok) {
+  if (stok === 0) {
+    return {
+      label: "Habis",
+      className: "habis"
+    };
+  } else if (stok <= 5) {
+    return {
+      label: "Stok terbatas",
+      className: "terbatas"
+    };
+  } else {
+    return {
+      label: "Tersedia",
+      className: "tersedia"
+    };
+  }
+}
+
+// Membuat HTML untuk satu kartu produk
+function buatKartuProduk(produk) {
+  const status = statusStok(produk.stok);
+
+  const badgeUnggulan = produk.unggulan
+    ? '<span class="product-badge">Produk unggulan</span>'
+    : "";
+
+  return `
+    <article class="product-card">
+      <div class="product-content">
+        ${badgeUnggulan}
+        <h3>${produk.nama}</h3>
+        <p>${produk.deskripsi}</p>
+        <p>Kategori: ${produk.kategori}</p>
+        <p class="price">${formatRupiah(produk.harga)}</p>
+        <span class="stock-badge ${status.className}">
+          ${status.label}
+        </span>
+      </div>
+    </article>
+  `;
+}
+
 // Fungsi untuk menampilkan produk
 function renderProduk() {
   const grid = document.querySelector("#produk-dinamis");
@@ -52,56 +96,38 @@ function renderProduk() {
     return;
   }
 
-  let jumlahTersedia = 0;
-  let htmlProduk = "";
+  // Filter produk yang stoknya tersedia
+  const produkTersedia = daftarProduk.filter(
+    (produk) => produk.stok > 0
+  );
 
-  daftarProduk.forEach((produk) => {
-    // Conditional 1: menentukan status stok
-    let statusStok = "";
-let kelasStok = "";
+  // Membuat HTML semua kartu produk
+  const htmlProduk = daftarProduk
+    .map((produk) => buatKartuProduk(produk))
+    .join("");
 
-if (produk.stok === 0) {
-  statusStok = "Habis";
-  kelasStok = "habis";
-} else if (produk.stok <= 5) {
-  statusStok = "Stok terbatas";
-  kelasStok = "terbatas";
-  jumlahTersedia++;
-} else {
-  statusStok = "Tersedia";
-  kelasStok = "tersedia";
-  jumlahTersedia++;
-}
+  // Mencari produk unggulan
+  const produkUnggulan = daftarProduk.find(
+    (produk) => produk.unggulan
+  );
 
-    // Conditional 2: menampilkan badge produk unggulan
-    let badgeUnggulan = "";
-
-    if (produk.unggulan) {
-      badgeUnggulan =
-        '<span class="product-badge">Produk unggulan</span>';
-    }
-
-    htmlProduk += `
-      <article class="product-card">
-        <div class="product-content">
-          ${badgeUnggulan}
-          <h3>${produk.nama}</h3>
-          <p>${produk.deskripsi}</p>
-          <p>Kategori: ${produk.kategori}</p>
-          <p class="price">${formatRupiah(produk.harga)}</p>
-          <span class="stock-badge ${kelasStok}">
-  ${statusStok}
-</span>
-        </div>
-      </article>
-    `;
-  });
-
+  // Menampilkan seluruh kartu produk
   grid.innerHTML = htmlProduk;
 
+  // Memperbarui ringkasan produk
   ringkasan.textContent =
     `${daftarProduk.length} produk ditampilkan. ` +
-    `${jumlahTersedia} produk memiliki stok tersedia.`;
+    `${produkTersedia.length} produk memiliki stok tersedia.`;
+
+  // Menampilkan informasi produk unggulan di Console
+  if (produkUnggulan) {
+    console.log("Produk unggulan:", produkUnggulan.nama);
+  }
+
+  // Menampilkan data produk di Console
+  daftarProduk.forEach((produk) => {
+    console.log("Produk:", produk.nama);
+  });
 
   console.table(daftarProduk);
 }
