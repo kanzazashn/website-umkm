@@ -167,16 +167,21 @@
 </article>
 </div>
 </section>
-<section aria-labelledby="produk-pilihan-title">
-  <h2 id="produk-pilihan-title">Produk Pilihan</h2>
-
-  <div class="product-grid" id="produk-dinamis">
-    <p>Produk sedang dimuat...</p>
+<section class="product-section" aria-labelledby="produk-unggulan-title">
+  <div class="section-heading">
+    <p class="eyebrow">Katalog</p>
+    <h2 id="produk-unggulan-title">Produk Unggulan UMKM</h2>
+    <p id="produk-status" class="produk-status">Produk belum dimuat.</p>
   </div>
 
-  <p id="ringkasan-produk" aria-live="polite">
-    Menyiapkan katalog produk...
-  </p>
+  <div class="filter-bar" aria-label="Filter kategori produk">
+    <button type="button" class="filter-button is-active" data-filter="Semua">Semua</button>
+    <button type="button" class="filter-button" data-filter="Kopi">Kopi</button>
+    <button type="button" class="filter-button" data-filter="Teh">Teh</button>
+    <button type="button" class="filter-button" data-filter="Non-kopi">Non-kopi</button>
+</div>
+
+  <div id="produk-grid" class="product-grid" aria-live="polite"></div>
 </section>
 <!-- TABEL HARGA -->
 <section aria-labelledby="harga-title" class="price-section">

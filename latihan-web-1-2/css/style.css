@@ -1878,3 +1878,33 @@ fieldset label:last-child {
   background-color: #fee2e2;
   color: #991b1b;
 }
+
+/* P11 - Filter kategori produk */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filter-button {
+  padding: 10px 18px;
+  border: 1px solid #8b6b4a;
+  border-radius: 20px;
+  background: #fff;
+  color: #4b3621;
+  cursor: pointer;
+  font: inherit;
+}
+
+.filter-button.is-active {
+  background: #6f4e37;
+  color: #fff;
+}
+
+.empty-state {
+  padding: 24px;
+  text-align: center;
+  border: 1px dashed #b9a28d;
+  border-radius: 12px;
+}
