@@ -1908,3 +1908,96 @@ fieldset label:last-child {
   border: 1px dashed #b9a28d;
   border-radius: 12px;
 }
+
+
+/* ========================================
+   P12 - VALIDASI FORM KONTAK
+   ======================================== */
+
+.field-error,
+.form-feedback {
+  margin: 0;
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.field-error {
+  min-height: 1.4rem;
+}
+
+[aria-invalid="true"] {
+  border-color: #b91c1c;
+  box-shadow: 0 0 0 3px rgb(185 28 28 / 15%);
+}
+
+.form-feedback.success {
+  color: #166534;
+}
+
+.preference-actions {
+  margin-top: 16px;
+}
+
+#hapus-preferensi {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e2e8f0;
+  color: #172554;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#hapus-preferensi:hover {
+  background-color: #cbd5e1;
+}
+
+
+/* P12 - Perapian Tampilan Form Kontak */
+
+#form-kontak {
+  width: 100%;
+  max-width: 760px;
+}
+
+#form-kontak .field {
+  margin-bottom: 14px;
+}
+
+#form-kontak .field label {
+  margin-bottom: 5px;
+}
+
+#form-kontak .field input:not([type="radio"]):not([type="checkbox"]),
+#form-kontak .field select,
+#form-kontak .field textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 14px;
+}
+
+.field-error {
+  min-height: 0;
+  margin-top: 4px;
+}
+
+.field-error:empty {
+  display: none;
+}
+
+#form-kontak button {
+  margin-top: 12px;
+}
+
+.preference-panel {
+  margin-top: 32px;
+}
+
+.preview-section {
+  margin-top: 28px;
+}
+
+.form-feedback.info {
+  color: #79543b;
+  font-weight: 500;
+}
