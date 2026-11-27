@@ -1,0 +1,38 @@
+[
+  {
+    "id": "kopi-tubruk-signature",
+    "name": "Kopi Tubruk Signature",
+    "category": "Kopi",
+    "price": 38000,
+    "stock": 12,
+    "featured": true,
+    "description": "Kopi dengan rasa kuat dan aroma khas."
+  },
+  {
+    "id": "cold-brew-aren",
+    "name": "Cold Brew Aren",
+    "category": "Kopi",
+    "price": 30000,
+    "stock": 0,
+    "featured": true,
+    "description": "Kopi dingin dengan manis gula aren."
+  },
+  {
+    "id": "lemon-tea",
+    "name": "Lemon Tea",
+    "category": "Teh",
+    "price": 20000,
+    "stock": 8,
+    "featured": false,
+    "description": "Teh lemon yang segar."
+  },
+  {
+    "id": "matcha-latte",
+    "name": "Matcha Latte",
+    "category": "Non-kopi",
+    "price": 40000,
+    "stock": 3,
+    "featured": false,
+    "description": "Matcha dan susu dengan tekstur lembut."
+  }
+]

@@ -171,7 +171,18 @@
   <div class="section-heading">
     <p class="eyebrow">Katalog</p>
     <h2 id="produk-unggulan-title">Produk Unggulan UMKM</h2>
-    <p id="produk-status" class="produk-status">Produk belum dimuat.</p>
+
+    <p id="catalog-status" class="catalog-status" aria-live="polite">
+      Produk belum dimuat.
+    </p>
+
+    <p id="produk-ringkasan">
+      Menunggu data produk.
+    </p>
+
+    <p id="produk-unggulan">
+      Produk unggulan akan muncul setelah data dimuat.
+    </p>
   </div>
 
   <div class="filter-bar" aria-label="Filter kategori produk">
@@ -179,9 +190,9 @@
     <button type="button" class="filter-button" data-filter="Kopi">Kopi</button>
     <button type="button" class="filter-button" data-filter="Teh">Teh</button>
     <button type="button" class="filter-button" data-filter="Non-kopi">Non-kopi</button>
-</div>
+  </div>
 
-  <div id="produk-grid" class="product-grid" aria-live="polite"></div>
+  <div id="produk-dinamis" class="product-grid" aria-live="polite"></div>
 </section>
 <!-- TABEL HARGA -->
 <section aria-labelledby="harga-title" class="price-section">
@@ -258,6 +269,6 @@
       </p>
 </footer>
 <script src="js/script.js"></script>
-<script src="js/app.js" defer></script>
+<script type="module" src="js/catalog-api.js"></script>
 </body>
 </html>

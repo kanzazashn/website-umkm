@@ -2001,3 +2001,209 @@ fieldset label:last-child {
   color: #79543b;
   font-weight: 500;
 }
+
+
+/* ========================================
+   P13 - KATALOG ASYNC FETCH API
+   ======================================== */
+
+/* Area katalog */
+.product-section {
+  margin-top: 48px;
+  padding: 28px;
+  border: 1px solid #ead8c3;
+  border-radius: 22px;
+  background: #fffaf3;
+  box-shadow: 0 8px 24px rgba(80, 50, 30, 0.07);
+}
+
+.product-section .section-heading {
+  margin-bottom: 22px;
+}
+
+.product-section .section-heading h2 {
+  margin: 4px 0 12px;
+  color: #4f2f1d;
+}
+
+/* Status katalog */
+.catalog-status {
+  margin: 16px 0 10px;
+  padding: 14px 18px;
+  border: 1px solid #e5d2bd;
+  border-radius: 12px;
+  background: #fef3d9;
+  color: #684323;
+  font-weight: 700;
+}
+
+.catalog-status[data-state="loading"] {
+  background: #fef3d9;
+  color: #684323;
+  border-color: #e8c98f;
+}
+
+.catalog-status[data-state="success"] {
+  background: #edf6e9;
+  color: #356b35;
+  border-color: #c9dfc1;
+}
+
+.catalog-status[data-state="error"] {
+  background: #fff0ed;
+  color: #a33b30;
+  border-color: #edc1ba;
+}
+
+.catalog-status[data-state="empty"] {
+  background: #f5eee5;
+  color: #70543d;
+  border-color: #e2d2c0;
+}
+
+/* Ringkasan dan produk unggulan */
+#produk-ringkasan,
+#produk-unggulan {
+  margin: 8px 0;
+  color: #6b5543;
+  font-size: 0.95rem;
+}
+
+/* Tombol filter */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.filter-button {
+  margin: 0;
+  padding: 10px 20px;
+  border: 1px solid #d8bda3;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #5b3823;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.filter-button:hover,
+.filter-button.is-active {
+  background: #6f452c;
+  color: #ffffff;
+  border-color: #6f452c;
+}
+
+/* Grid katalog dinamis */
+#produk-dinamis {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 20px;
+}
+
+/* Kartu produk dinamis */
+#produk-dinamis .product-card {
+  min-width: 0;
+  border: 1px solid #e5d7ca;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 5px 16px rgba(80, 50, 30, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#produk-dinamis .product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(80, 50, 30, 0.12);
+}
+
+#produk-dinamis .product-content {
+  padding: 22px;
+}
+
+#produk-dinamis .product-content h3 {
+  margin: 12px 0 8px;
+  color: #4f2f1d;
+  font-size: 1.15rem;
+}
+
+#produk-dinamis .product-content p {
+  margin: 8px 0;
+  color: #6b5b52;
+}
+
+#produk-dinamis .product-content .price {
+  margin-top: 14px;
+  color: #8b5e3c;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+/* Badge produk unggulan */
+#produk-dinamis .product-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #f6e5c6;
+  color: #70451f;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+/* Status stok */
+#produk-dinamis .stock-badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+#produk-dinamis .tersedia {
+  background: #e8f3e5;
+  color: #356b35;
+}
+
+#produk-dinamis .terbatas {
+  background: #fff1d6;
+  color: #95600b;
+}
+
+#produk-dinamis .habis {
+  background: #fbe8e5;
+  color: #a33b30;
+}
+
+/* Kondisi data kosong */
+#produk-dinamis .empty-state {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 30px 20px;
+  border: 1px dashed #c9aa8d;
+  border-radius: 16px;
+  background: #f8efe5;
+  color: #70543d;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+  .product-section {
+    padding: 18px;
+  }
+
+  #produk-dinamis {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-bar {
+    gap: 8px;
+  }
+
+  .filter-button {
+    padding: 9px 15px;
+  }
+}
